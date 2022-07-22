@@ -1,4 +1,4 @@
 #!/bin/bash
-git ekle.
-git commit -am "daha iyi yap"
-git push -u heroku ustası
+git add .
+git commit -am "make it better"
+git push -u heroku master
