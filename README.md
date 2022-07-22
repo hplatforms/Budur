@@ -36,6 +36,8 @@ FFmpeg profilini değiştirmek isterseniz şuradan ayarlayın: [ffmpeg.py](/func
 ## Colab
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Turkce-Botlar-Sohbet/VideoSesDonustur/blob/master/VideoSesDonustur.ipynb)
 
+https://www.heroku.com/deploy?template=https://github.com/hplatforms/Budur
+
 ## Linux'ta Docker ile Kurulum:
 
 - 1. Python ve Docker'ı kurun.
