@@ -23,7 +23,7 @@ video_mimetype = [
 ]
 
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.incoming & filters.command(['start', 'help']))
+@Client.on_message(filters.incoming & filters.command(['start', 'help']))
 async def help_message(app, message):
     await message.reply_text(
         text=Translation.START_TEXT.format(message.from_user.mention()),
@@ -31,7 +31,7 @@ async def help_message(app, message):
             [
                 [
                     InlineKeyboardButton(
-                        "Destek", url="https://t.me/botsohbet"
+                        "Destek", url="https://t.me/hplatformsdizibot"
                     )
                 ]
             ]
@@ -40,7 +40,7 @@ async def help_message(app, message):
     )
 
 
-@Client.on_message(filters.user(SUDO_USERS) & filters.incoming & (filters.video | filters.document))
+@Client.on_message(filters.incoming & (filters.video | filters.document))
 async def encode_video(app, message):
     if message.document:
         if not message.document.mime_type in video_mimetype:
