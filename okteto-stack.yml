@@ -1,11 +1,13 @@
 services:
-  f1:
+  f2:
     build: .
     environment:
-      APP_ID: $APP_ID
-      API_HASH: $API_HASH
+      APP_ID: $APP_ID  
+      API_HASH: $API_HASH  
+      BOT_TOKEN: $BOT_TOKEN 
+      DOWNLOAD_DIR: $DOWNLOAD_DIR
+      ENCODE_DIR: $ENCODE_DIR
       SUDO_USERS: $SUDO_USERS
-      BOT_TOKEN: $BOT_TOKEN
     ports:
       - 8080
     resources:
